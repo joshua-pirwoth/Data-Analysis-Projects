@@ -58,6 +58,7 @@ SELECT *
 FROM imdb_movies;
 
 
+# TRANSFORM THE RUNTIME COLUMN
 SELECT RunTime, TRIM(RunTime)
 FROM imdb_movies;
 
@@ -68,10 +69,24 @@ UPDATE imdb_movies
 SET RunTime = NULL
 WHERE RunTime NOT REGEXP '^[0-9]+(\.[0-9]+)?$';
 
+SELECT RunTime, ROUND(RunTime, 0)
+FROM imdb_movies;
+
+UPDATE imdb_movies
+SET RunTime = ROUND(RunTime, 0);
+
+ALTER TABLE imdb_movies
+MODIFY COLUMN RunTime INT;
+
+SELECT *
+FROM imdb_movies;
 
 
+#GROSS
+SELECT Gross, REPLACE(Gross, ',', '')
+FROM imdb_movies;
 
-
-
+UPDATE imdb_movies
+SET Gross = REPLACE(Gross, ',', '');
 
 
