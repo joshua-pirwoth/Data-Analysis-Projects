@@ -1,17 +1,19 @@
-DROP TABLE IF EXISTS movies_for_mysql;
+DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS imdb_movies;
 
 # STARTTTTTTTTT OVERRRRRRR
 
-
+# CREATE A NEW TABLE WITH A STRUCTURE DUPLICATED FROM THE ORIGINAL TABLE
 CREATE TABLE imdb_movies
-LIKE movies_for_mysql;
+LIKE movies;
 
 SELECT * FROM imdb_movies;
 
+# COPY ALL THE DATA FROM THE ORIGINAL TABLE INTO THE NEW ONE
 INSERT imdb_movies
-SELECT * FROM movies_for_mysql;
+SELECT * FROM movies;
 
+SELECT * FROM imdb_movies;
 
 # TRIM MOVIE NAMES
 SELECT MOVIES, TRIM(MOVIES)
@@ -21,9 +23,7 @@ UPDATE imdb_movies
 SET MOVIES = TRIM(MOVIES);
 
 
-SELECT * FROM imdb_movies;
-
-# CONVERTING RATING TO A FLOAT DATATYPE
+# REPLACE EMPTY RATING VALUES WITH NULL
 SELECT *
 FROM imdb_movies
 WHERE RATING = '';
@@ -32,11 +32,13 @@ UPDATE imdb_movies
 SET RATING = NULL
 WHERE RATING = '';
 
+
+# CONVERT RATING TO FLOATS
 ALTER TABLE imdb_movies
 MODIFY COLUMN RATING FLOAT;
 
 
-# CONVERTING VOTES TO A FLOAT DATATYPE
+# REPLACE EMPTY VOTES VALUES WITH NULL
 SELECT VOTES
 FROM imdb_movies
 WHERE VOTES = '';
@@ -45,18 +47,37 @@ UPDATE imdb_movies
 SET VOTES = NULL
 WHERE VOTES = '';
 
+# TRIMMING VOTE VALUES
 UPDATE imdb_movies
 SET VOTES = TRIM(VOTES);
 
+SELECT VOTES
+FROM imdb_movies
+WHERE VOTES IS NOT NULL
+ORDER BY 1;
+
+# CHECK FOR VOTE VALUES WITH THE THOUSAND SEPARATOR, AND REMOVE THE SEPARATOR
+SELECT VOTES, REPLACE(VOTES, ',', '')
+FROM imdb_movies
+WHERE VOTES IS NOT NULL
+ORDER BY 1;
+
 UPDATE imdb_movies
 SET VOTES = REPLACE(VOTES, ',', '');
+
+# CHECK FOR, AND REPLACE VOTE VALUES THAT WERE NOT RECORDED AS NUMBERS, AS NULLS
+SELECT VOTES
+FROM imdb_movies
+WHERE VOTES NOT REGEXP '^[0-9]+(\.[0-9]+)?$';
 
 UPDATE imdb_movies
 SET VOTES = NULL
 WHERE VOTES NOT REGEXP '^[0-9]+(\.[0-9]+)?$';
 
+# CONVERTING VOTES TO AN INT DATATYPE
 ALTER TABLE imdb_movies
 MODIFY COLUMN VOTES INT;
+
 
 SELECT *
 FROM imdb_movies;
@@ -69,24 +90,46 @@ FROM imdb_movies;
 UPDATE imdb_movies
 SET RunTime = TRIM(RunTime);
 
+# REPLACE VOTE VALUES THAT WERE NOT RECORDED AS NUMBERS, AS NULLS
 UPDATE imdb_movies
 SET RunTime = NULL
 WHERE RunTime NOT REGEXP '^[0-9]+(\.[0-9]+)?$';
 
+# ROUND UP THE VALUES TO ZERO DP
 SELECT RunTime, ROUND(RunTime, 0)
 FROM imdb_movies;
 
 UPDATE imdb_movies
 SET RunTime = ROUND(RunTime, 0);
 
+# CONVERTING RUNTIME VALUES TO AN INT DATATYPE
 ALTER TABLE imdb_movies
 MODIFY COLUMN RunTime INT;
+
+SELECT DISTINCT RunTime
+FROM imdb_movies
+WHERE RunTime IS NOT NULL
+ORDER BY 1;
+
+SELECT *
+FROM imdb_movies;
+
+SELECT STARS, TRIM(STARS)
+FROM imdb_movies
+WHERE STARS LIKE ' %';
+
+UPDATE imdb_movies
+SET STARS = TRIM(STARS);
+
 
 SELECT *
 FROM imdb_movies;
 
 
 #GROSS
+SELECT GROSS
+FROM imdb_movies;
+
 SELECT Gross, REPLACE(Gross, ',', '')
 FROM imdb_movies;
 
@@ -96,32 +139,30 @@ SET Gross = REPLACE(Gross, ',', '');
 UPDATE imdb_movies
 SET Gross = TRIM(Gross);
 
+# REPLACE EMPTY GROSS VALUES WITH NULLS
 UPDATE imdb_movies
 SET Gross = NULL
 WHERE Gross = '';
 
-# Retrieves all records with a Gross that was mistakenly recorded as words
+# GROSS VALUES THAT WERE NOT RECORDED AS NUMBERS OR CURRENCIES
 SELECT DISTINCT Gross
 FROM imdb_movies
 WHERE (Gross NOT LIKE '$%') AND (Gross NOT REGEXP '^[0-9]+(\.[0-9]+)?$');
 
-# Replace the above records to null values
+# REPLACE THE ABOVE RESULTS WITH NULLS
 UPDATE imdb_movies
 SET Gross = NULL
 WHERE (Gross NOT LIKE '$%') AND (Gross NOT REGEXP '^[0-9]+(\.[0-9]+)?$');
 
-# Retrieves all records with a Gross that was recorded as numbers without the currency notation
+SELECT DISTINCT Gross
+FROM imdb_movies;
+
+# ALL GROSS VALUES RECORDED WITHOUT A CURRENCY NOTATION
 SELECT DISTINCT Gross
 FROM imdb_movies
 WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
 
-SELECT Gross
-FROM imdb_movies
-WHERE Gross IS NOT NULL
-ORDER BY 1;
-
-
-# RECONCILING THE ISSUE OF UNREALISTIC VALUES IN THE GROSS COLUMN
+# USING A NEW COLUMN TO SEPARATELY HANDLE THE INCONSISTENCIES IN THE GROSS COLUMN
 ALTER TABLE imdb_movies
 ADD COLUMN movie_gross
 TEXT;
@@ -129,64 +170,31 @@ TEXT;
 SELECT *
 FROM imdb_movies;
 
-
-UPDATE imdb_movies
-SET Gross = REPLACE(Gross, ',', '')
-WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
-
-SELECT Gross
-FROM imdb_movies
-WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
-
-SELECT Gross, movie_gross
-FROM imdb_movies
-WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
-
+# COPY ALL GROSS VALUES WITHOUT A CURRENCY NOTATION, TO THE NEW MOVIE_GROSS COLUMN
 UPDATE imdb_movies
 SET movie_gross = Gross
-WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$'; 
+WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
 
 SELECT Gross, movie_gross
 FROM imdb_movies
 WHERE Gross IS NOT NULL;
 
-ALTER TABLE imdb_movies
-MODIFY COLUMN movie_gross INT;
-
-SELECT movie_gross
-FROM imdb_movies
-WHERE movie_gross < 100000;
-
-UPDATE imdb_movies
-SET movie_gross = NULL
-WHERE movie_gross < 100000;
-
+# NULLIFY ALL GROSS VALUES WITHOUT A CURRENCY NOTATION FROM THE GROSS COLUMN
+# THIS HELPS TO WORK ON THE ONES WITH A NOTATION SEPARATELY FROM THOS THAT DONT, IN THE MOVIE_GROSS COLUMN
 UPDATE imdb_movies
 SET Gross = NULL
 WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
 
-
-UPDATE imdb_movies AS t2
-JOIN movies_for_mysql AS t1
-	ON t1.MOVIES = t2.MOVIES
-SET t2.Gross = t1.Gross
-WHERE t1.Gross LIKE '$%M';
-
-
 SELECT Gross
-FROM movies_for_mysql
-WHERE Gross != '';
+FROM imdb_movies
+WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
 
-ALTER TABLE imdb_movies
-MODIFY COLUMN Gross FLOAT;
 
-UPDATE movies_for_mysql
-SET Gross = TRIM(Gross);
-
-SELECT Gross
+SELECT Gross, movie_gross
 FROM imdb_movies
 WHERE Gross IS NOT NULL;
 
+# REMOVE THE MILLION SUFFIX FROM GROSS VALUES
 SELECT Gross, TRIM(TRAILING 'M' FROM Gross)
 FROM imdb_movies
 WHERE Gross IS NOT NULL;
@@ -195,6 +203,7 @@ UPDATE imdb_movies
 SET Gross = TRIM(TRAILING 'M' FROM Gross)
 WHERE Gross IS NOT NULL;
 
+# REMOVE THE DOLLAR PREFIX FROM GROSS VALUES
 SELECT Gross, TRIM(LEADING '$' FROM Gross)
 FROM imdb_movies
 WHERE Gross IS NOT NULL;
@@ -203,6 +212,7 @@ UPDATE imdb_movies
 SET Gross = TRIM(LEADING '$' FROM Gross)
 WHERE Gross IS NOT NULL;
 
+# CHANGE GROSS VALUES TO FLOAT SO AS TO STANDARDIZE THE VALUES
 ALTER TABLE imdb_movies
 MODIFY COLUMN Gross FLOAT;
 
@@ -213,12 +223,40 @@ WHERE Gross IS NOT NULL;
 UPDATE imdb_movies
 SET Gross = (Gross * 1000000);
 
+# CHANGE ALL GROSS AND MOVIE_GROSS VALUES TO INTEGERS
 SELECT Gross
 FROM imdb_movies
 WHERE Gross IS NOT NULL;
 
 ALTER TABLE imdb_movies
 MODIFY COLUMN Gross INT;
+
+SELECT movie_gross
+FROM imdb_movies
+WHERE movie_gross IS NOT NULL;
+
+ALTER TABLE imdb_movies
+MODIFY COLUMN movie_gross INT;
+
+# NULLIFY ALL MOVIE_GROSS VALUES WITH AN UNREALISTICALLY LOW VALUE
+SELECT *
+FROM imdb_movies
+WHERE movie_gross < 100000;
+
+UPDATE imdb_movies
+SET movie_gross = NULL
+WHERE movie_gross < 100000;
+
+
+SELECT DISTINCT `YEAR`
+FROM imdb_movies;
+
+
+
+
+
+
+
 
 
 SELECT *
