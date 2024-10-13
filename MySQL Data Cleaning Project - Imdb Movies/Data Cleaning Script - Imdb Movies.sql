@@ -1,13 +1,12 @@
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS imdb_movies;
 
-# STARTTTTTTTTT OVERRRRRRR
-
 # CREATE A NEW TABLE WITH A STRUCTURE DUPLICATED FROM THE ORIGINAL TABLE
 CREATE TABLE imdb_movies
 LIKE movies;
 
-SELECT * FROM imdb_movies;
+SELECT * FROM
+imdb_movies;
 
 # COPY ALL THE DATA FROM THE ORIGINAL TABLE INTO THE NEW ONE
 INSERT imdb_movies
@@ -248,72 +247,154 @@ SET movie_gross = NULL
 WHERE movie_gross < 100000;
 
 
+# STANDARDISING THE YEAR COLUMN DATA
+# CHECK IF THERE ARE ANY ENTRIES THAT HAVE LEADING OR TRAILING SPACES
+SELECT `YEAR`
+FROM imdb_movies
+WHERE `YEAR` LIKE ' % ';
+
+# REMOVING LEADING AND TRAILING BRACKETS FROM YEAR VALUES
+SELECT `YEAR`, TRIM(LEADING '(' FROM `YEAR`)
+FROM imdb_movies;
+
+UPDATE imdb_movies
+SET `YEAR` = TRIM(LEADING '(' FROM `YEAR`);
+
+SELECT `YEAR`, TRIM(TRAILING ')' FROM `YEAR`)
+FROM imdb_movies;
+
+UPDATE imdb_movies
+SET `YEAR` = TRIM(TRAILING ')' FROM `YEAR`);
+
+UPDATE imdb_movies
+SET `YEAR` = TRIM(`YEAR`);
+
+SELECT `YEAR`, REPLACE(`YEAR`, 'I', '')
+FROM imdb_movies
+WHERE `YEAR` LIKE '%I%';
+
+UPDATE imdb_movies
+SET `YEAR` = REPLACE(`YEAR`, 'I', '');
+
+SELECT `YEAR`, REPLACE(`YEAR`, '–', '')
+FROM imdb_movies
+WHERE `YEAR` LIKE '%–';
+
+UPDATE imdb_movies
+SET `YEAR` = REPLACE(`YEAR`, '–', '')
+WHERE `YEAR` LIKE '%–';
+
+UPDATE imdb_movies
+SET `YEAR` = TRIM(`YEAR`);
+
 SELECT DISTINCT `YEAR`
 FROM imdb_movies;
 
+SELECT `YEAR`, REPLACE(`YEAR`, ')', '')
+FROM imdb_movies
+WHERE `YEAR` LIKE '%)%';
+
+UPDATE imdb_movies
+SET `YEAR` = REPLACE(`YEAR`, ')', '')
+WHERE `YEAR` LIKE '%)%';
+
+SELECT `YEAR`, REPLACE(`YEAR`, '(', '')
+FROM imdb_movies
+WHERE `YEAR` LIKE '%(%';
+
+UPDATE imdb_movies
+SET `YEAR` = REPLACE(`YEAR`, '(', '')
+WHERE `YEAR` LIKE '%(%';
+
+UPDATE imdb_movies
+SET `YEAR` = TRIM(`YEAR`);
+
+SELECT DISTINCT `YEAR`
+FROM imdb_movies;
+
+# CREATE TWO NEW COLUMNS TO SPLIT THE YEARS OF MOVIES
+ALTER TABLE imdb_movies
+ADD COLUMN start_year TEXT;
+
+ALTER TABLE imdb_movies
+ADD COLUMN end_year TEXT;
+
+SELECT `YEAR`, start_year, end_year
+FROM imdb_movies;
+
+UPDATE imdb_movies
+SET start_year = `YEAR`
+WHERE `YEAR` LIKE '____';
+
+SELECT `YEAR`, SUBSTR(`YEAR`, 6), start_year, end_year
+FROM imdb_movies
+WHERE LENGTH(`YEAR`) > 4;
+
+UPDATE imdb_movies
+SET end_year = SUBSTR(`YEAR`, 6)
+WHERE LENGTH(`YEAR`) > 4;
+
+SELECT `YEAR`, SUBSTR(`YEAR`, 1, 4), start_year, end_year
+FROM imdb_movies
+WHERE LENGTH(`YEAR`) > 4;
+
+UPDATE imdb_movies
+SET start_year = SUBSTR(`YEAR`, 1, 4)
+WHERE LENGTH(`YEAR`) > 4;
+
+SELECT `YEAR`, start_year, end_year
+FROM imdb_movies;
 
 
+# GENRE
+UPDATE imdb_movies
+SET GENRE = TRIM(GENRE);
 
 
+SELECT MOVIES, `YEAR`, start_year, end_year, GENRE, RATING, VOTES, RunTime, Gross, movie_gross, `ONE-LINE`, STARS
+FROM imdb_movies;
 
 
+# RECONCILING GROSS VALUES
+SELECT Gross, movie_gross
+FROM imdb_movies
+WHERE movie_gross IS NOT NULL;
 
+UPDATE imdb_movies
+SET Gross = movie_gross
+WHERE movie_gross IS NOT NULL;
+
+SELECT Gross
+FROM imdb_movies
+WHERE Gross < 100000;
+
+UPDATE imdb_movies
+SET Gross = NULL
+WHERE Gross < 100000;
+
+
+SELECT MOVIES, `YEAR`, start_year, end_year, GENRE, RATING, VOTES, RunTime, Gross, movie_gross, `ONE-LINE`, STARS
+FROM imdb_movies;
 
 SELECT *
 FROM imdb_movies;
 
+
+# DELETE COLUMNS THAT ARE NOT USEFUL FOR ANALYSIS
 ALTER TABLE imdb_movies
 DROP COLUMN `ONE-LINE`;
 
 ALTER TABLE imdb_movies
 DROP COLUMN STARS;
 
-SELECT *
-FROM imdb_movies
-WHERE Gross < 100000;
-
-# NULLIFY UNREALISTICALLY LOW GROSS VALUES
-UPDATE imdb_movies
-SET Gross = NULL
-WHERE Gross < 100000;
-
-
-SELECT Gross
-FROM movies_for_mysql
-WHERE Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
-
 ALTER TABLE imdb_movies
-MODIFY COLUMN Gross TEXT;
- 
+DROP COLUMN movie_gross;
 
-UPDATE imdb_movies AS t2
-JOIN movies_for_mysql AS t1
-	ON t1.MOVIES = t2.MOVIES
-SET t2.Gross = t1.Gross
-WHERE t1.Gross REGEXP '^[0-9]+(\.[0-9]+)?$';
+SELECT *
+FROM imdb_movies;
 
-SELECT Gross
-FROM imdb_movies
-WHERE Gross IS NOT NULL;
+SELECT MOVIES, `YEAR`, start_year, end_year, GENRE, RATING, VOTES, RunTime, Gross
+FROM imdb_movies;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- ENDDDDD OF PROJECTTTTTTT!!!!!!!
