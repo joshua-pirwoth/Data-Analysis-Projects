@@ -1,0 +1,254 @@
+Death_ID,City,Incident_Type,Fatalities,Injuries,Category,Cause_of_Death
+2024-GAZ-00145,"Gaza City","Drone Strike",677,5,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00146,"Gaza City","Missile Strike",58064,8,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00147,"Gaza City","Artillery Shelling",45481,4,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001414,"Gaza City","Rocket Attack",3957,14,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001444,"Gaza City",Airstrike,3733,44,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001410,"Gaza City","Building Collapse",2369,1,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00143,Jabalia,"Drone Strike",78,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,Jabalia,"Artillery Shelling",213,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001486,Jabalia,"Rocket Attack",6655,86,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001498,Jabalia,Airstrike,1215,98,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014110,Jabalia,Airstrike,1810,11,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001430,Jabalia,"Building Collapse",1484,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141889,"Gaza City",Airstrike,7419,1889,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141234,"Gaza City","Rocket Attack",3154,1234,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141703,"Gaza City","Missile Strike",2663,173,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001410119,"Gaza City","Missile Strike",15631,1119,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00149802,"Gaza City","Rocket Attack",16642,982,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001416904,"Gaza City","Building Collapse",27631,1694,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001412372,"Gaza City","Artillery Shelling",20894,12372,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001413,"Gaza City","Drone Strike",761,13,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001412,"Gaza City","Artillery Shelling",832,12,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00146,"Gaza City","Rocket Attack",528,6,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,"Gaza City",Airstrike,625,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,"Gaza City",Airstrike,755,4,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00148,"Gaza City","Building Collapse",983,8,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001437,"Gaza City",Airstrike,175,37,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00147,"Gaza City",Airstrike,143,7,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,"Gaza City",Airstrike,20,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City",Airstrike,1,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00145,"Gaza City","Drone Strike",434,5,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00149,"Gaza City","Artillery Shelling",582,9,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001417,"Gaza City","Rocket Attack",1557,17,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City",Airstrike,214,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City",Airstrike,1072,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City","Building Collapse",333,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City","Building Collapse",588,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-00145,"Gaza City","Rocket Attack",62,5,"Direct Conflict","Crush Injuries"
+2024-GAZ-00148,"Gaza City","Building Collapse",11,8,"Direct Conflict","Crush Injuries"
+2024-GAZ-001440,"Gaza City","Artillery Shelling",57,4,"Direct Conflict","Crush Injuries"
+2024-GAZ-00146,"Beit Lahia","Missile Strike",124,6,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014184,"Beit Lahia","Artillery Shelling",3355,184,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00145,"Beit Lahia",Airstrike,363,5,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014783,"Beit Lahia",Airstrike,22433,783,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014657,"Beit Lahia","Building Collapse",10759,657,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001415,"Beit Hanoun",Airstrike,117,15,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014458,"Beit Hanoun",Airstrike,17267,458,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014175,"Beit Hanoun","Building Collapse",6395,175,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Deir al-Balah","Rocket Attack",53,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-00141,"Deir al-Balah","Artillery Shelling",1,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-00142,"Middle Area","Drone Strike",15,2,"Lack of Medical Access",Sepsis
+2024-GAZ-0014221,"Middle Area","Rocket Attack",1624,221,"Lack of Medical Access",Sepsis
+2024-GAZ-001437,"Middle Area",Airstrike,1181,37,"Lack of Medical Access",Sepsis
+2024-GAZ-00146,"Gaza City","Missile Strike",199,6,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001412,"Gaza City","Artillery Shelling",235,12,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,"Gaza City","Rocket Attack",56,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001419,"Gaza City",Airstrike,424,19,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001424,"Gaza City",Airstrike,1261,24,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001439,"Gaza City",Airstrike,868,39,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,Unknown,Airstrike,417,3,"Lack of Medical Access",Sepsis
+2024-GAZ-00141,Unknown,Airstrike,4,1,"Lack of Medical Access",Burns
+2024-GAZ-0014759,"North Gaza ","Drone Strike",28093,759,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014276,"North Gaza ","Missile Strike",19182,276,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014372,"North Gaza ","Artillery Shelling",22203,372,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014491,"North Gaza ","Rocket Attack",26944,491,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014819,"North Gaza ",Airstrike,33661,819,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014584,"North Gaza ",Airstrike,21700,584,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014182,"North Gaza ","Building Collapse",13884,182,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"North Gaza ",Airstrike,127,1,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001419,"North Gaza ","Building Collapse",2047,19,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00143,"North Gaza ",Airstrike,6,3,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001427,Jabalia,"Drone Strike",1159,27,"Lack of Medical Access",Sepsis
+2024-GAZ-001415,Jabalia,"Missile Strike",546,15,"Lack of Medical Access",Sepsis
+2024-GAZ-001411,Jabalia,"Artillery Shelling",603,11,"Lack of Medical Access",Sepsis
+2024-GAZ-001442,Jabalia,"Rocket Attack",1954,42,"Lack of Medical Access",Sepsis
+2024-GAZ-001468,Jabalia,Airstrike,7919,68,"Lack of Medical Access",Sepsis
+2024-GAZ-0014336,Jabalia,Airstrike,20851,336,"Lack of Medical Access",Sepsis
+2024-GAZ-001421,Ethiopia,"Building Collapse",1682,21,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001472,Ethiopia,Airstrike,850,72,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City","Building Collapse",4,1,"Lack of Medical Access",Burns
+2024-GAZ-00148,"North Gaza","Missile Strike",692,8,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014243,"North Gaza","Artillery Shelling",28944,243,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014100,"North Gaza",Airstrike,9548,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014105,"North Gaza",Airstrike,10628,15,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,"North Gaza","Building Collapse",438,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014180,"North Gaza",Airstrike,2733,18,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001432,Guinea,"Rocket Attack",319,32,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014133,Guinea,Airstrike,7350,133,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001460,Guinea,Airstrike,2000,6,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,Guinea-Bissau,"Artillery Shelling",11,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001428,Guinea-Bissau,"Rocket Attack",969,28,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001422,Guinea-Bissau,Airstrike,3068,22,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014447,Haiti,"Drone Strike",41421,447,"Lack of Medical Access",Sepsis
+2024-GAZ-0014322,Haiti,"Missile Strike",36045,322,"Lack of Medical Access",Sepsis
+2024-GAZ-0014296,Haiti,"Artillery Shelling",27753,296,"Lack of Medical Access",Sepsis
+2024-GAZ-0014593,Haiti,"Rocket Attack",58809,593,"Lack of Medical Access",Sepsis
+2024-GAZ-0014894,Haiti,Airstrike,112076,894,"Lack of Medical Access",Sepsis
+2024-GAZ-00142869,Haiti,Airstrike,340311,2869,"Lack of Medical Access",Sepsis
+2024-GAZ-00143990,Haiti,"Building Collapse",179379,399,"Lack of Medical Access",Sepsis
+2024-GAZ-00143,"Gaza City","Drone Strike",841,3,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00144,"Gaza City","Missile Strike",889,4,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001421,"Gaza City","Artillery Shelling",4031,21,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001454,"Gaza City","Rocket Attack",6008,54,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00149,"Gaza City","Building Collapse",5155,9,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00143420,"Gaza City",Airstrike,15067,342,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00142799,"Gaza City","Rocket Attack",13052,2799,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001426946,"Gaza City","Missile Strike",47637,26946,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001449818,"Gaza City","Missile Strike",66849,49818,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00147662,"Gaza City","Rocket Attack",23533,7662,"Lack of Medical Access",Asphyxiation
+2024-GAZ-0014124227,"Gaza City","Building Collapse",213225,124227,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001441543,"Gaza City","Artillery Shelling",86787,41543,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141257,"North Gaza",Airstrike,5997,1257,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001436,"North Gaza","Rocket Attack",204,36,"Lack of Medical Access",Asphyxiation
+2024-GAZ-0014474,"North Gaza","Missile Strike",1742,474,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141,"Khan Younis","Missile Strike",86,1,"Lack of Medical Access","Traumatic Brain Injury"
+2024-GAZ-00147,"Khan Younis","Rocket Attack",256,7,"Lack of Medical Access","Traumatic Brain Injury"
+2024-GAZ-001412,"Khan Younis",Airstrike,1187,12,"Lack of Medical Access","Traumatic Brain Injury"
+2024-GAZ-00142,"Khan Younis","Missile Strike",4965,2,"Lack of Medical Access","Traumatic Brain Injury"
+2024-GAZ-00144,"Khan Younis",Airstrike,4693,4,"Lack of Medical Access","Traumatic Brain Injury"
+2024-GAZ-001420,"Khan Younis","Rocket Attack",227,2,"Lack of Medical Access","Traumatic Brain Injury"
+2024-GAZ-001410,Rafah,Airstrike,185,1,"Direct Conflict",Burns
+2024-GAZ-001480,Rafah,"Drone Strike",5866,8,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001467,Rafah,"Missile Strike",13291,67,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00149,Rafah,"Artillery Shelling",35,9,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,Rafah,Airstrike,74,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001463,Rafah,"Building Collapse",3188,63,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,"Deir al-Balah","Building Collapse",237,4,"Direct Conflict","Crush Injuries"
+2024-GAZ-001418,"Deir al-Balah","Building Collapse",31,18,"Direct Conflict","Crush Injuries"
+2024-GAZ-00141,"Deir al-Balah",Airstrike,54,1,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001427,"Gaza City",Airstrike,168,27,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001428,"Deir al-Balah",Airstrike,1151,28,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001446,"Beit Hanoun","Drone Strike",1792,46,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001411,"Beit Hanoun","Missile Strike",693,11,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,"Beit Hanoun",Airstrike,187,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,"Beit Hanoun",Airstrike,120,4,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001417,"Beit Hanoun","Building Collapse",1155,17,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,"Khan Younis","Missile Strike",244,2,"Direct Conflict","Crush Injuries"
+2024-GAZ-00141,"Khan Younis","Artillery Shelling",134,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-00141,"Khan Younis","Rocket Attack",171,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-00141,"Khan Younis",Airstrike,282,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-001410,"Khan Younis",Airstrike,586,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-00146,"Khan Younis","Building Collapse",443,6,"Direct Conflict","Crush Injuries"
+2024-GAZ-00143,"Khan Younis",Airstrike,106,3,"Direct Conflict","Crush Injuries"
+2024-GAZ-00142,"Beit Lahia","Rocket Attack",23,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001419,"Beit Lahia",Airstrike,219,19,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001495,"Beit Lahia",Airstrike,2220,95,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014201,"Beit Lahia",Airstrike,2665,21,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,"Beit Lahia",Airstrike,46,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Beit Lahia","Rocket Attack",187,1,"Lack of Medical Access",Sepsis
+2024-GAZ-00142,Jabalia,"Drone Strike",883,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001464,Jabalia,"Missile Strike",8739,64,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,Jabalia,"Artillery Shelling",480,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001419,Jabalia,"Rocket Attack",1869,19,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00147,Jabalia,Airstrike,647,7,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00145,Jabalia,Airstrike,1279,5,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014117,Jabalia,"Building Collapse",7430,117,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001411,Jabalia,"Drone Strike",782,11,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001412,Jabalia,"Missile Strike",103,12,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001476,Jabalia,Airstrike,911,76,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001417,Jabalia,"Rocket Attack",263,17,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00143,Jabalia,"Missile Strike",7,3,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001412,Jabalia,"Rocket Attack",42,12,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00149,Jabalia,"Building Collapse",22,9,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00144685,Jabalia,"Artillery Shelling",6753,4685,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001413,Jabalia,"Artillery Shelling",485,13,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,"Beit Lahia","Artillery Shelling",933,2,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00149,"Beit Lahia","Building Collapse",1790,9,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141,"Beit Lahia",Airstrike,391,1,"Lack of Medical Access",Asphyxiation
+2024-GAZ-0014384,"Gaza City","Missile Strike",2706,384,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00146,Rafah,"Drone Strike",38,6,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,"Deir al-Balah","Missile Strike",51,4,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001480,"Deir al-Balah","Artillery Shelling",2059,8,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001413,"Deir al-Balah","Rocket Attack",585,13,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014110,"Deir al-Balah",Airstrike,5284,11,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001460,"Deir al-Balah",Airstrike,2324,6,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001466,"Deir al-Balah","Building Collapse",1154,66,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00148,"Deir al-Balah",Airstrike,16,8,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001432,"Deir al-Balah","Drone Strike",768,32,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014186,"Deir al-Balah","Missile Strike",5290,186,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014755,"Deir al-Balah","Artillery Shelling",35996,755,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014229,"Deir al-Balah","Rocket Attack",6600,229,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001418,"Deir al-Balah",Airstrike,597,18,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014742,"Deir al-Balah",Airstrike,23377,742,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141712,"Deir al-Balah","Building Collapse",44456,1712,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,"Deir al-Balah",Airstrike,15,4,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00146,Rafah,"Artillery Shelling",1218,6,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001423,Rafah,"Rocket Attack",1069,23,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00148,Rafah,Airstrike,144,8,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-0014219,Rafah,Airstrike,527,219,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001486,Rafah,"Missile Strike",366,86,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00142,Rafah,Airstrike,1535,2,"Direct Conflict","Crush Injuries"
+2024-GAZ-001495,Rafah,"Building Collapse",8997,95,"Direct Conflict","Crush Injuries"
+2024-GAZ-00148,Rafah,"Artillery Shelling",4547,8,"Direct Conflict","Crush Injuries"
+2024-GAZ-001414,Rafah,Airstrike,1864,14,"Direct Conflict","Crush Injuries"
+2024-GAZ-00143,Rafah,Airstrike,120,3,"Direct Conflict","Crush Injuries"
+2024-GAZ-00142,Rafah,"Building Collapse",33,2,"Direct Conflict","Crush Injuries"
+2024-GAZ-001438,Rafah,Airstrike,1095,38,"Direct Conflict","Crush Injuries"
+2024-GAZ-0014273,Rafah,"Rocket Attack",5261,273,"Direct Conflict","Crush Injuries"
+2024-GAZ-00141405,"Khan Younis","Missile Strike",9923,145,"Direct Conflict","Crush Injuries"
+2024-GAZ-001423,"Middle Area",Airstrike,475,23,"Direct Conflict","Crush Injuries"
+2024-GAZ-001414,"Gaza City",Airstrike,266,14,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001432,"North Gaza","Rocket Attack",377,32,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014299,"North Gaza",Airstrike,23124,299,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001474,"North Gaza",Airstrike,293,74,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014548,"Deir al-Balah","Drone Strike",15619,548,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001484,"Deir al-Balah","Missile Strike",7536,84,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-0014140,"Deir al-Balah","Rocket Attack",6864,14,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-0014200,"Deir al-Balah",Airstrike,22576,2,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00141130,"Deir al-Balah",Airstrike,77636,113,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-0014103,"Deir al-Balah","Building Collapse",3510,13,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001410,"Deir al-Balah",Airstrike,43,1,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-001482,Unknown,"Drone Strike",4295,82,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001447,Unknown,"Missile Strike",1818,47,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014167,Unknown,"Artillery Shelling",6421,167,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Deir al-Balah","Drone Strike",52,1,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141,"Deir al-Balah","Missile Strike",125,1,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00144,"Deir al-Balah",Airstrike,279,4,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001415,"Deir al-Balah","Building Collapse",1974,15,"Lack of Medical Access",Asphyxiation
+2024-GAZ-001421,"Deir al-Balah","Rocket Attack",401,21,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141426,"Deir al-Balah","Missile Strike",10201,1426,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00142,"Deir al-Balah","Artillery Shelling",16,2,"Lack of Medical Access",Asphyxiation
+2024-GAZ-00141,"Deir al-Balah","Missile Strike",35,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001411,"Deir al-Balah","Artillery Shelling",262,11,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,"Deir al-Balah","Rocket Attack",166,4,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Deir al-Balah",Airstrike,61,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,"Deir al-Balah","Building Collapse",72,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00143,"Deir al-Balah",Airstrike,75,3,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001452,Unknown,Airstrike,384,52,"Lack of Medical Access",Burns
+2024-GAZ-001411,"North Gaza","Drone Strike",516,11,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001433,"North Gaza","Missile Strike",1461,33,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00149,"North Gaza","Artillery Shelling",309,9,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001427,"North Gaza","Rocket Attack",748,27,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014135,"North Gaza",Airstrike,6326,135,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001478,"North Gaza","Building Collapse",2341,78,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014172,Rafah,"Drone Strike",11360,172,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-0014144,Rafah,"Missile Strike",11563,144,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001417,Rafah,"Rocket Attack",270,17,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00144,Rafah,Airstrike,286,4,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001411,Rafah,Airstrike,942,11,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001459,Rafah,"Building Collapse",4469,59,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Deir al-balah",Airstrike,82,1,"Direct Conflict","Crush Injuries"
+2024-GAZ-0014167,"Deir al-balah","Rocket Attack",8353,167,"Direct Conflict","Crush Injuries"
+2024-GAZ-00147,"Deir al-balah","Building Collapse",7,7,"Direct Conflict","Crush Injuries"
+2024-GAZ-001421,"Deir al-balah","Artillery Shelling",26,21,"Direct Conflict","Crush Injuries"
+2024-GAZ-0014164,"Deir al-balah","Drone Strike",15751,164,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-0014134,"Deir al-balah",Airstrike,31789,134,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00144,"Deir al-balah","Building Collapse",300,4,"Direct Conflict","Traumatic Brain Injury"
+2024-GAZ-00142,"North Gaza",Airstrike,198,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00147,"North Gaza",Airstrike,330,7,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001462,"North Gaza","Building Collapse",6794,62,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City","Drone Strike",10,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00141,"Gaza City",Airstrike,23,1,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-00142,"Gaza City",Airstrike,1220,2,"Lack of Medical Access","Hemorrhagic Shock"
+2024-GAZ-001421,"Gaza City","Building Collapse",951,21,"Lack of Medical Access","Hemorrhagic Shock"
